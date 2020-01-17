@@ -2,20 +2,28 @@
 
 # Create a variable `my_name` that contains your name
 
+my_name <- "Ryan Crowley"
 
 # Create a variable `name_length` that holds how many letters (including spaces)
 # are in your name (use the `nchar()` function)
 
+name_length <- function(letters_in_name) {
+  letters_in_name <- nchar(my_name, type = "chars", allowNA = FALSE)
+  return(letters_in_name)
+}
 
 # Print the number of letters in your name
 
+print(name_length("Ryan Crowley"))
 
 # Create a variable `now_doing` that is your name followed by "is programming!" 
 # (use the `paste()` function)
 
+now_doing <- print(paste(my_name, "is programming"))
 
 # Make the `now_doing` variable upper case
 
+Now_Doing <-  print(paste(my_name, "is programming"))
 
 ### Bonus
 
